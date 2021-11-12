@@ -6,6 +6,7 @@ queue = []
 maxNum = 5
 condition = Condition()
 
+# Color coding the output for easy visualization
 RED = "\033[91m"
 GREEN = "\033[92m"
 RESET = "\033[0m"

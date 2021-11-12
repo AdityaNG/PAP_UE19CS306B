@@ -15,8 +15,8 @@ def squareList(a, result, squareSum):
 
 if __name__ == "__main__":
     a = range(1, 6)
-    result = Array('i', 5) # Shared between multiple Processes (C style IPC)
-    squareSum = Value('i') # Shared between multiple Processes (C style IPC)
+    result = Array('i', 5) # Shared between multiple Processes (ctypes object in shared memory)
+    squareSum = Value('i') # Shared between multiple Processes (ctypes object in shared memory)
     p1 = Process(target = squareList, args = (a, result, squareSum), name = "P1")
     p1.start()
     p1.join()

@@ -1,10 +1,10 @@
 from multiprocessing import Process
 
 def cube(num):
-    print(f"Cube of the given number if {num ** 3}")
+    print(f"Cube of the given number is {num ** 3}")
 
 def square(num):
-    print(f"Square of the given number if {num ** 2}")
+    print(f"Square of the given number is {num ** 2}")
 
 if __name__ == "__main__":
     p1 = Process(target = cube, args = (10,))
